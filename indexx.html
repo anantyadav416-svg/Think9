@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Think9 Centralized Intelligence Layer | MIT Hack/Project Style</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          },
+          colors: {
+            mit: '#A31F34',
+            darkBg: '#090D16',
+            cardBg: 'rgba(17, 24, 39, 0.75)',
+            accentBlue: '#38BDF8'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-darkBg text-slate-200 font-sans antialiased selection:bg-mit selection:text-white">
+
+  <!-- Fixed Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800 px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <span class="px-2.5 py-1 text-xs font-mono font-bold bg-mit text-white rounded">THINK9-AI</span>
+      <span class="text-sm font-semibold tracking-wide text-slate-300">Central Intelligence System</span>
+    </div>
+    <div class="hidden md:flex space-x-8 text-sm font-mono text-slate-400">
+      <a href="#overview" class="hover:text-accentBlue transition">01. Overview</a>
+      <a href="#architecture" class="hover:text-accentBlue transition">02. Architecture</a>
+      <a href="#pipeline" class="hover:text-accentBlue transition">03. Pipeline</a>
+      <a href="#roadmap" class="hover:text-accentBlue transition">04. 30-Day Plan</a>
+      <a href="#impact" class="hover:text-accentBlue transition">05. Impact</a>
+    </div>
+    <a href="https://github.com" target="_blank" class="text-xs font-mono bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded border border-slate-700 transition">GitHub Repo</a>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 pt-32 pb-24 space-y-24">
+
+    <!-- Hero / Title Section -->
+    <header id="overview" class="space-y-6">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 text-xs font-mono text-accentBlue bg-sky-950/60 border border-sky-800/60 rounded-full">
+        <span>Autonomous Multi-Brand Agent System</span>
+        <span>•</span>
+        <span>Think9 AI Challenge Submission</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        A Centralized Agentic Layer for <br class="hidden md:inline"/>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-300 to-rose-400">30+ Consumer Brands in Parallel.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed">
+        Transitioning organizational execution from fragmented, isolated tasks into an autonomous, self-optimizing multi-agent network that aggregates intelligence across all brand verticals.
+      </p>
+      <div class="flex flex-wrap gap-4 pt-2 text-xs font-mono">
+        <div class="bg-slate-900 border border-slate-800 px-4 py-2 rounded"><strong>Target:</strong> 30+ Brands Ecosystem</div>
+        <div class="bg-slate-900 border border-slate-800 px-4 py-2 rounded"><strong>Stack:</strong> LangGraph, FastAPI, Vector DB, Redis</div>
+        <div class="bg-slate-900 border border-slate-800 px-4 py-2 rounded"><strong>Focus:</strong> Speed, Sourcing, Content & Decision Velocity</div>
+      </div>
+    </header>
+
+    <!-- Problem vs Solution Breakdown -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="p-8 rounded-2xl bg-cardBg border border-red-950/60 backdrop-blur">
+        <span class="text-xs font-mono font-bold text-red-400 uppercase tracking-widest">The Core Bottleneck</span>
+        <h2 class="text-2xl font-bold text-white mt-2 mb-4">Linear Scaling Bottlenecks</h2>
+        <ul class="space-y-3 text-slate-300 text-sm">
+          <li class="flex items-start">
+            <span class="text-red-400 mr-2 font-mono">•</span>
+            Fragmented vendor interactions and duplicate sourcing across multiple independent brand teams.
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-400 mr-2 font-mono">•</span>
+            Slow reactive market research failing to capture fast-moving Indian consumer shifts.
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-400 mr-2 font-mono">•</span>
+            High creative latency in producing performance ad variations and packaging assets.
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-cardBg border border-emerald-950/60 backdrop-blur">
+        <span class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">The Architectural Pivot</span>
+        <h2 class="text-2xl font-bold text-white mt-2 mb-4">Unified Intelligence Backbone</h2>
+        <ul class="space-y-3 text-slate-300 text-sm">
+          <li class="flex items-start">
+            <span class="text-emerald-400 mr-2 font-mono">•</span>
+            Central data aggregation layer pulling unstructured PDFs, vendor quotes, and review streams.
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-400 mr-2 font-mono">•</span>
+            Domain-specific autonomous agent nodes (Sourcing, Intelligence, Content) with strict guardrails.
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-400 mr-2 font-mono">•</span>
+            Human-in-the-loop validation dashboards for brand identity and quality assurance.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Architecture & Working Section -->
+    <section id="architecture" class="space-y-6">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="text-xs font-mono text-accentBlue">SYSTEM SPECIFICATION</span>
+        <h2 class="text-3xl font-bold text-white mt-1">Multi-Agent Workflow Topology</h2>
+      </div>
+
+      <!-- Interactive / Code-like Architecture Block -->
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 font-mono text-xs overflow-x-auto">
+        <div class="text-slate-500 mb-2">// Ingestion & Agent Coordination Pipeline</div>
+        <div class="text-emerald-400">[Data Ingestion Layer]</div>
+        <div class="text-slate-400 ml-4">├─► Sourcing & PDF Parser (Quotes, MOQs, Lead Times)</div>
+        <div class="text-slate-400 ml-4">├─► Market & Sentiment Listener (Social Signals, Reviews, Consumer Trends)</div>
+        <div class="text-slate-400 ml-4">└─► Institutional Memory Store (Meeting Transcripts, Brand Playbooks)</div>
+        <div class="text-emerald-400 mt-2">[Central Orchestrator: Think9-Brain Router]</div>
+        <div class="text-slate-400 ml-4">├─► Agent A: Cross-Portfolio Volume Sourcing Matcher</div>
+        <div class="text-slate-400 ml-4">├─► Agent B: Real-Time Creative Engine (Brand-Constrained Copy/Visuals)</div>
+        <div class="text-slate-400 ml-4">└─► Agent C: Operational Query & Decision Synthesizer</div>
+        <div class="text-emerald-400 mt-2">[Execution & Guardrails]</div>
+        <div class="text-slate-400 ml-4">└─► Human-in-the-Loop Approval UI ➔ Push to Production Channels</div>
+      </div>
+    </section>
+
+    <!-- 30-Day Roadmap Table -->
+    <section id="roadmap" class="space-y-6">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="text-xs font-mono text-accentBlue">DEPLOYMENT TIMELINE</span>
+        <h2 class="text-3xl font-bold text-white mt-1">30-Day MVP Execution Plan</h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="border-b border-slate-800 text-slate-400 font-mono text-xs">
+              <th class="py-3 px-4">Phase</th>
+              <th class="py-3 px-4">Focus Area</th>
+              <th class="py-3 px-4">Key Deliverables</th>
+              <th class="py-3 px-4">Status</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 font-sans">
+            <tr class="hover:bg-slate-900/40 transition">
+              <td class="py-4 px-4 font-mono font-semibold text-accentBlue">Week 1</td>
+              <td class="py-4 px-4 font-medium text-white">Ingestion Pipeline & Vector Store</td>
+              <td class="py-4 px-4 text-slate-300">Set up document parsing for vendor quotes, past brand briefs, and brand knowledge base.</td>
+              <td class="py-4 px-4 font-mono text-xs text-emerald-400">Ready</td>
+            </tr>
+            <tr class="hover:bg-slate-900/40 transition">
+              <td class="py-4 px-4 font-mono font-semibold text-accentBlue">Week 2</td>
+              <td class="py-4 px-4 font-medium text-white">Agent Logic & Multi-Brand Routing</td>
+              <td class="py-4 px-4 text-slate-300">Implement domain-specific agents with custom system instructions and brand tone configs.</td>
+              <td class="py-4 px-4 font-mono text-xs text-amber-400">In Development</td>
+            </tr>
+            <tr class="hover:bg-slate-900/40 transition">
+              <td class="py-4 px-4 font-mono font-semibold text-accentBlue">Week 3</td>
+              <td class="py-4 px-4 font-medium text-white">Guardrails & Human Approval UI</td>
+              <td class="py-4 px-4 text-slate-300">Build dashboard for brand managers to review, refine, or approve agent recommendations.</td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-500">Scheduled</td>
+            </tr>
+            <tr class="hover:bg-slate-900/40 transition">
+              <td class="py-4 px-4 font-mono font-semibold text-accentBlue">Week 4</td>
+              <td class="py-4 px-4 font-medium text-white">Pilot Testing Across 3 Selected Brands</td>
+              <td class="py-4 px-4 text-slate-300">Benchmark speed gains, evaluate cost savings, and iterate on multi-brand feedback.</td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-500">Scheduled</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Results & Impact Metrics -->
+    <section id="impact" class="p-8 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 space-y-6">
+      <div>
+        <span class="text-xs font-mono text-accentBlue">ESTIMATED EFFICIENCY MULTIPLIER</span>
+        <h2 class="text-2xl font-bold text-white mt-1">Projected Cross-Portfolio Returns</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+        <div class="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
+          <div class="text-3xl font-extrabold text-white font-mono">10x</div>
+          <div class="text-xs text-slate-400 mt-1">Creative iteration velocity for digital packaging & ad variations</div>
+        </div>
+        <div class="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
+          <div class="text-3xl font-extrabold text-accentBlue font-mono">15-20%</div>
+          <div class="text-xs text-slate-400 mt-1">Procurement cost reduction via automated volume bundling</div>
+        </div>
+        <div class="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
+          <div class="text-3xl font-extrabold text-emerald-400 font-mono">&lt; 30s</div>
+          <div class="text-xs text-slate-400 mt-1">Institutional memory retrieval time across 30+ brand playbooks</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center text-xs font-mono text-slate-500 gap-4">
+      <div>Think9 AI Challenge Submission • Autonomous Learning Systems</div>
+      <div>Designed for Scalable Multi-Brand Execution</div>
+    </footer>
+
+  </main>
+</body>
+</html>
